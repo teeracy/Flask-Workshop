@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>
+			Hi, {{ name }}!
+		</title>
+	</head>
+	<body>
+		Hello there, {{ name }}!
+		<br><br>
+		Please Confirm Your Name:
+		<form action="/hello/{{ name }}/" method="POST">
+		  	<input type="text" name="name" placeholder="Name"><br>
+		  	<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
+
